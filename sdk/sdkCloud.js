@@ -32,8 +32,19 @@ let capabilities = {
     .build();
   driver.manage().window().fullscreen();
   try {
-    await driver.get("https://www.lambdatest.com/visual-regression-testing");
-    await smartuiSnapshot(driver, "LT-SmartUI");
+    for (var i =0; i<5; i++) {
+      await driver.get("https://www.zupee.com/blog/facebook-se-paise-kaise-kamaye/");
+      await smartuiSnapshot(driver, "zupee" + i);
+      await driver.get("https://www.atypon.com/category/news/");
+      await smartuiSnapshot(driver, "atypon-category" + i);
+      await driver.get("https://www.atypon.com/how-we-can-help/");
+      await smartuiSnapshot(driver, "atypon-help" + i);
+      await driver.get("https://www.minitab.com/en-us/resources-services/resources/events/");
+      await smartuiSnapshot(driver, "minitab" + i);
+      await driver.get("https://ipinfo.io/");
+      await smartuiSnapshot(driver, "ipinfo" + i);
+    }
+
   } finally {
     await driver.quit();
   }
