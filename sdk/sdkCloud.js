@@ -32,7 +32,7 @@ let capabilities = {
     .build();
   driver.manage().window().fullscreen();
   try {
-    for (var i =0; i<5; i++) {
+    for (var i =1; i<=25; i++) {
       await driver.get("https://www.zupee.com/blog/facebook-se-paise-kaise-kamaye/");
       await smartuiSnapshot(driver, "zupee" + i);
       await driver.get("https://www.atypon.com/category/news/");
