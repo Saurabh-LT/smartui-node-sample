@@ -1,0 +1,60 @@
+{
+    "web": {
+      "browsers": [
+        "chrome",
+        "edge",
+        "firefox",
+        "safari"
+      ],
+      "viewports": [
+        [
+          1920
+        ],
+        [
+          2000
+        ],
+        [
+          1800
+        ],
+        [
+          2100
+        ],
+        [
+          2200
+        ],
+        [
+          2300
+        ],
+        [
+          1700
+        ],
+        [
+          1600
+        ],
+        [
+          320
+        ],
+        [
+          480
+        ],
+        [
+          500
+        ],
+        [
+          720
+        ]
+      ]
+    },
+    "mobile": {
+      "devices": [
+        "iPhone 14",
+        "Galaxy S24"
+      ],
+      "fullPage": false,
+      "orientation": "portrait"
+    },
+    "waitForTimeout": 4000,
+    "enableJavaScript": false,
+    "allowedHostnames": []
+  }
+  
